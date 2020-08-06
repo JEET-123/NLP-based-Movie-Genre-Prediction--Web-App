@@ -66,5 +66,5 @@ nb_classifier = MultinomialNB(alpha=0.1)
 nb_classifier.fit(X_train, y_train)
 
 # Creating a pickle file for the Multinomial Naive Bayes model
-filename = 'movie-genre.pkl'
+filename = 'movie-genre-mnb-model.pkl'
 pickle.dump(nb_classifier, open(filename, 'wb'))
